@@ -1,2 +1,3 @@
 *Dependencias ignoradas
 node_modules 
+dist-server

@@ -3,7 +3,7 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express', author:'Adrian Itxcoatl', appName:'WebApp', company: 'Software asombroso' });
+  res.render('index', { title: 'Express', author:'Itxcoatl', appName:'WebApp', company: 'Software asombroso' });
 });
 /* agregando nueva ruta*/
 router.get('/greeting', function(req, res, next){
