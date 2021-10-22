@@ -12,7 +12,8 @@
                 "root" : ["./"],
                 "alias" :{
                     "@server" : "./Server",
-                    "@s-routes" :"./Server/routes"
+                    "@s-routes" : "./Server/routes",
+                    "@s-config" : "./Server/config"
                 }
             }
         ]
