@@ -1,12 +1,17 @@
-var express = require('express');
-var router = express.Router();
+/* eslint-disable prettier/prettier */
+// Importando el router de Home
+import homeRouter from  './home';
+// Importando Router de Users
+import userRouter from './user';
 
-/* GET home page. */
-router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express', author:'Itxcoatl', appName:'WebApp', company: 'Software asombroso' });
-});
-/* agregando nueva ruta*/
-router.get('/greeting', function(req, res, next){
-  res.status(200).json({message:'Hola Dude'})
-})
-module.exports = router;
+// Agregando las rutas a la aplicacion
+
+const addRoutes = (app) =>{
+    app.use('/', homeRouter);
+    app.use('/user', userRouter);
+};
+
+export default {
+    addRoutes,
+};
+
