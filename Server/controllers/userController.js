@@ -1,4 +1,4 @@
-const index = (req,res) =>{
+const index = (req, res) => {
   res.send('Indexado de Usuarios.. Under Contruction. ');
 };
 
